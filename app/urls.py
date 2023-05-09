@@ -7,4 +7,5 @@ from django.contrib.auth import views as auth_view
 
 urlpatterns = [
 path('', views.ProfileView.as_view(),name='profile'),
+path('view', views.BinaryView,name='view'),
 ]
