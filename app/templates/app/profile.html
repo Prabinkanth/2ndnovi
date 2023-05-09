@@ -14,11 +14,16 @@
 <form action="" method="post">
 
     {% csrf_token %}
-    
-    {% for fm in form %}
-    {{fm.label_tag}}{{fm}} <small class="text-danger"> {{fm.errors|striptags}} </small>  
+    <label for="">name</label>
+    {{form.name}}{{fm}} <small class="text-danger"> {{fm.errors|striptags}} </small>  
     <br>
-   {% endfor %} 
+    <label for="">Parent ID</label>
+    {{form.parent_id}}{{fm}} <small class="text-danger"> {{fm.errors|striptags}} </small>  
+    <br>
+    <label for="">Position</label>
+    {{form.position}}{{fm}} <small class="text-danger"> {{fm.errors|striptags}} </small>  
+    <br>
+  
    <div class="col-12 mt-3">
     <button type="submit" class="btn btn-primary w-100">submit</button>
    </div>

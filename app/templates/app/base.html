@@ -30,51 +30,10 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Products
-                </a>
-               
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link " href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class= "nav-link " href="#">Contact Us</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">Cart 0  </a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">Wishlist 0  </a>
-              </li>
-             
-              {% else %}
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">Login  </a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">Register </a>
-              </li>
-              {% endif %}
-             
-            </ul>
-            {% if request.user.is_authenticated %}
-            <form class="d-flex" role="search">
-              <ul class="navbar-nav me-auto mb-2 ">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="profile-down" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{request.user}}
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                    
-                  </ul>
-                 
-                </li>
-               
-              </ul>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success bg-white" type="submit">Search</button>
+                </a> 
+              </li>           
+               </li>  
+              </ul> 
             </form>
             
           </div>
