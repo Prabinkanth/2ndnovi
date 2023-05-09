@@ -1,8 +1,9 @@
 from django import forms
-from.models import BinaryTree,parrent
+from .models import BinaryTree,Parent
 
 
 class CustomerProfileForm(forms.ModelForm):
+    
     class Meta:
         model = BinaryTree 
         fields = ['name','parent_id','position']
