@@ -25,5 +25,9 @@ class ProfileView(View):
     
 
 def BinaryView(request):
-    add = BinaryTree.objects.filter()
-    return render(request,'app/address.html',locals())
+    query = request.GET.get('q')  # Get the query string from the URL parameters
+    if query:
+        add = BinaryTree.objects.filter(name__icontains=query)
+    else:
+        add = BinaryTree.objects.all()
+    return render(request, 'app/address.html', {'add': add, 'query': query})
